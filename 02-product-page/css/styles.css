@@ -1,0 +1,36 @@
+body {
+  margin: 20px;
+}
+
+h2 {
+  color: #0b63ff;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  letter-spacing: 1px;
+}
+
+td, th {
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e6f7ff;
+}
+
+.btn-buy {
+  background-color: teal;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,56 @@
+/* Table Styles */
+.table-container {
+  max-width: 800px;
+  margin: 20px auto;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+th {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s; /* Smooth animation */
+}
+
+tr:hover td {
+  background-color: #f1f4f8; /* Hover effect */
+}
+
+/* MEDIA QUERY: Mobile View (Nov 26 Task) */
+@media screen and (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead { display: none; } /* Hide headers on mobile */
+
+  tr { margin-bottom: 1rem; border: 1px solid #2c3e50; }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    border-bottom: 1px solid #eee;
+  }
+
+  td::before {
+    content: attr(data-label); /* Show header name on left */
+    font-weight: bold;
+    text-align: left;
+  }
+}
